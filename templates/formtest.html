@@ -1,6 +1,8 @@
 $def with (form)
 
-<form name="main" method="post">
+<form method="POST"  name="main" enctype="multipart/form-data" action="">
+
 $if not form.valid: <p class="error">Try again, AmeriCAN:</p>
 $:form.render()
-<input type="submit" />    </form>
+<input type="submit" />    
+</form>
